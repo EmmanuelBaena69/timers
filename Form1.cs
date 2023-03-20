@@ -97,5 +97,12 @@ namespace timers
                 lbl3.Text = cont3.ToString();
             }
         }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            tmr1.Enabled = false;
+            tmr2.Enabled = false;
+            tmr3.Enabled = false;
+        }
     }
 }

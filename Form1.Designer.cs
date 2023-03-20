@@ -46,6 +46,10 @@
             // 
             tmr2.Tick += tmr2_Tick;
             // 
+            // tmr3
+            // 
+            tmr3.Tick += tmr3_Tick;
+            // 
             // lbl1
             // 
             lbl1.AutoSize = true;

@@ -72,5 +72,30 @@ namespace timers
                 lbl2.Text = cont2.ToString();
             }
         }
+
+        private void tmr3_Tick(object sender, EventArgs e)
+        {
+            if (cont3 == 50)
+            {
+                flag50 = true;
+                flag3_1 = false;
+            }
+
+            if (cont3 == 1)
+            {
+                flag50 = false;
+                flag3_1 = true;
+            }
+            if (flag3_1 == true && flag50 == false)
+            {
+                cont3 = cont3 + 1;
+                lbl3.Text = cont3.ToString();
+            }
+            if ((flag50 == true && flag3_1 == false) && (flag1 == true && cont1 <= 50))
+            {
+                cont3 = cont3 - 1;
+                lbl3.Text = cont3.ToString();
+            }
+        }
     }
 }
